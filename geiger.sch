@@ -11958,11 +11958,11 @@ by R. Vogg  15.March.2002</description>
 <parts>
 <part name="IC1" library="ic-package" library_urn="urn:adsk.eagle:library:239" deviceset="DIL8" device="" package3d_urn="urn:adsk.eagle:package:14440/1" value="MC34063A"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="4.7n"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/1" value="0.05"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/1" value="31k"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/1" value="22"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/1" value="10k"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/1" value="10M"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -11982,8 +11982,11 @@ by R. Vogg  15.March.2002</description>
 <part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-050X075" package3d_urn="urn:adsk.eagle:package:23665/1" value="100u/1kV"/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-050X075" package3d_urn="urn:adsk.eagle:package:23665/1" value="22n/1kV"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/1" value="20k"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="100n"/>
+<part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11998,8 +12001,8 @@ by R. Vogg  15.March.2002</description>
 <instance part="R1" gate="G$1" x="66.04" y="66.04"/>
 <instance part="R3" gate="G$1" x="7.62" y="45.72" rot="R90"/>
 <instance part="R4" gate="G$1" x="7.62" y="55.88" rot="R90"/>
-<instance part="SUPPLY3" gate="GND" x="7.62" y="38.1"/>
-<instance part="P+1" gate="1" x="71.12" y="73.66"/>
+<instance part="SUPPLY3" gate="GND" x="2.54" y="27.94"/>
+<instance part="P+1" gate="1" x="73.66" y="73.66"/>
 <instance part="C2" gate="G$1" x="-7.62" y="48.26"/>
 <instance part="SUPPLY5" gate="GND" x="-7.62" y="38.1"/>
 <instance part="L1" gate="G$1" x="50.8" y="66.04" rot="R90"/>
@@ -12012,14 +12015,17 @@ by R. Vogg  15.March.2002</description>
 <instance part="Q2" gate="G$1" x="27.94" y="10.16" rot="MR0"/>
 <instance part="Q3" gate="G$1" x="63.5" y="20.32"/>
 <instance part="SUPPLY7" gate="GND" x="40.64" y="-5.08"/>
-<instance part="X1" gate="-1" x="86.36" y="66.04"/>
-<instance part="X1" gate="-2" x="86.36" y="63.5"/>
+<instance part="X1" gate="-1" x="91.44" y="66.04"/>
+<instance part="X1" gate="-2" x="91.44" y="63.5"/>
 <instance part="X2" gate="-1" x="-22.86" y="63.5" rot="R180"/>
 <instance part="X2" gate="-2" x="-22.86" y="66.04" rot="R180"/>
 <instance part="SUPPLY8" gate="GND" x="-17.78" y="60.96"/>
-<instance part="SUPPLY9" gate="GND" x="81.28" y="60.96"/>
+<instance part="SUPPLY9" gate="GND" x="88.9" y="60.96"/>
 <instance part="C3" gate="G$1" x="-7.62" y="63.5"/>
 <instance part="SUPPLY10" gate="GND" x="-7.62" y="55.88"/>
+<instance part="R5" gate="G$1" x="7.62" y="35.56" rot="R90"/>
+<instance part="C4" gate="G$1" x="73.66" y="63.5"/>
+<instance part="SUPPLY11" gate="GND" x="73.66" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -12058,10 +12064,6 @@ by R. Vogg  15.March.2002</description>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="SUPPLY3" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="-7.62" y1="40.64" x2="-7.62" y2="43.18" width="0.1524" layer="91"/>
@@ -12089,11 +12091,19 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
-<wire x1="81.28" y1="63.5" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="SUPPLY3" gate="GND" pin="GND"/>
+<wire x1="2.54" y1="30.48" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY11" gate="GND" pin="GND"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -12133,12 +12143,14 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="71.12" y1="71.12" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="71.12" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="6"/>
-<wire x1="60.96" y1="55.88" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
-<junction x="71.12" y="66.04"/>
+<wire x1="60.96" y1="55.88" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
+<junction x="73.66" y="66.04"/>
 <pinref part="X1" gate="-1" pin="S"/>
-<wire x1="71.12" y1="66.04" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -12190,6 +12202,12 @@ by R. Vogg  15.March.2002</description>
 <pinref part="IC1" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="35.56" x2="58.42" y2="40.64" width="0.1524" layer="91"/>
 <junction x="40.64" y="22.86"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
